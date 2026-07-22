@@ -1,0 +1,40 @@
+class Books{
+    String tittle;
+    int year;
+    String author;
+    String category;
+    int price;
+Books(String tittle,int year,String author,String category,int price){
+    this.tittle=tittle;
+    this.year=year;
+    this.author=author;
+    this.category=category;
+    this.price=price;
+}
+void display(){
+    System.out.println("tittle:"+ tittle);
+    System.out.println("year:"+ year);
+    System.out.println("author:"+ author);
+    System.out.println("category:"+ category);
+    System.out.println("price:"+ price);
+    System.out.println();
+}
+}
+public class Main{
+    public static void main (String[]args) {
+        Books[] Books=new Books[3];
+        Books b1=new Books("Wings of Fire",1999,"DrAPJ","Autobiography",
+        399);
+        Books[0]=b1;
+        Books b2=new Books("Atomic Habits",2018,"James Clear","self help",
+        600);
+        Books[1]=b2;
+        Books b3=new Books("Python",2005,"Albert Einsteen","coding",600);    
+        Books[2]=b3;
+        for(int i=0;i<Books.length;i++){
+            Books[i].display();
+}
+}
+}
+        
+    
