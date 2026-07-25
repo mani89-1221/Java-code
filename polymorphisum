@@ -1,0 +1,33 @@
+class college{
+    void department(){
+        System.out.println("welcome to excel engineering college");
+    }
+}
+class CSE extends college{
+    @Override
+    void department(){
+        System.out.println("welcome to computer science department");
+    }
+}
+class ECE extends college{
+    @Override
+    void department(){
+        System.out.println("welcome to ECE department");
+    }
+}
+class AIDS extends college{
+    @Override
+    void department(){
+        System.out.println("welcome to AI and Data Science department");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        college c=new CSE();
+        c.department();
+        college d=new ECE();
+        d.department();
+        college e=new AIDS();
+        e.department();
+    }
+}
